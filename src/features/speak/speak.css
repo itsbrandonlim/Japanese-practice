@@ -1,0 +1,19 @@
+.speak-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(1rem, 3vw, 2.5rem); margin-top: 2rem; }
+.speak-layout > section { min-width: 0; padding: clamp(1rem, 2.5vw, 1.8rem); border: 1px solid var(--line); border-radius: .4rem; }
+.speak-layout h2 { font: 500 clamp(1.65rem, 3vw, 2rem)/1.2 Georgia, serif; margin-bottom: 1rem; }
+.speak-layout h3 { font-size: 1.1rem; font-weight: 600; }
+.speak-layout label { display: block; }
+.speak-layout textarea { width: 100%; min-height: 6rem; resize: vertical; margin-block: .4rem .65rem; padding: .6rem; font: 1.5rem/1.5 "Yu Mincho", serif; }
+.speak-layout textarea, .speak-layout button, .speak-layout select { background: var(--paper); color: var(--ink); border: 1px solid var(--muted); border-radius: .35rem; }
+.speak-layout button, .speak-layout select { min-height: 44px; max-width: 100%; padding: .4rem .7rem; }
+.speak-layout button:disabled { opacity: .6; }
+.speak-layout .record-button, .phrase-choices [aria-pressed=true] { background: var(--accent); color: var(--paper); }
+.phrase-choices, .record-actions, .speak-layout .detail-controls { display: flex; align-items: end; flex-wrap: wrap; gap: .5rem; }
+.speak-layout .detail-controls label { display: grid; min-width: 0; max-width: 100%; }
+.record-actions, .take-review, .assessment-note { margin-top: 1rem; }
+.speak-layout p { overflow-wrap: anywhere; }
+.take-panel p, .take-panel audio { margin-block: .5rem; }
+.take-panel audio { display: block; width: 100%; }
+.assessment-note { border-top: 1px solid var(--line); padding-top: .8rem; color: var(--muted); }
+.mic-active { font-weight: 700; }
+@media (max-width: 46rem) { .speak-layout { grid-template-columns: minmax(0, 1fr); } }

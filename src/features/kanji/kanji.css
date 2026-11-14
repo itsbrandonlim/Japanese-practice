@@ -1,0 +1,38 @@
+.kanji { --stroke-guide: light-dark(#c8d4c3, #465e50); }
+.kanji h2 { margin-block: 1.5rem .7rem; font: 500 1.65rem/1.2 Georgia, serif; }
+.catalog-filters { display: grid; grid-template-columns: minmax(12rem, 2fr) 1fr 1fr; gap: .9rem; margin: 2rem 0 1.15rem; }
+.catalog-filters label, .kanji .detail-controls label { display: grid; gap: .3rem; font-size: .9rem; }
+.kanji input, .kanji select, .kanji button { min-height: 44px; border: 1px solid var(--line); border-radius: .4rem; background: var(--paper); color: var(--ink); padding: .5rem .85rem; font: inherit; }
+.kanji input, .kanji select { width: 100%; min-width: 0; }
+.kanji button { cursor: pointer; }
+.kanji button:disabled { opacity: .55; cursor: default; }
+.results-bar, .catalog-pagination { display: flex; align-items: center; gap: 1rem; justify-content: space-between; }
+.results-bar { min-height: 3.3rem; color: var(--muted); }
+.kanji-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 2px solid var(--accent); column-gap: 1.5rem; }
+.kanji-list li { border-bottom: 1px solid var(--line); }
+.kanji-list a { display: grid; grid-template-columns: 3.4rem 1fr; align-items: center; gap: .75rem; padding: .8rem .25rem; min-height: 6rem; }
+.kanji-list a:hover, .kanji-list a:focus-visible { background: light-dark(#edf2e9, #25382c); }
+.kanji-glyph { font: 2.6rem/1.4 "Yu Mincho", "Hiragino Mincho ProN", serif; text-align: center; }
+.kanji-list strong { font-weight: 600; overflow-wrap: anywhere; }
+.kanji-list small { display: block; color: var(--muted); margin-top: .2rem; }
+.catalog-pagination { justify-content: center; margin-top: 1.2rem; flex-wrap: wrap; }
+.kanji-sources { margin-top: 2rem; padding-top: .8rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.kanji-sources a, .back-catalog { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
+.back-catalog { display: inline-flex; min-height: 44px; align-items: center; margin-bottom: .5rem; }
+.entry-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 2.5rem; }
+.entry-facts { display: grid; grid-template-columns: auto minmax(0, 1fr); }
+.entry-facts dt, .entry-facts dd { border-top: 1px solid var(--line); padding: .6rem 0; overflow-wrap: anywhere; }
+.entry-facts dt { padding-right: 1rem; color: var(--muted); }
+.word-examples li { padding: .55rem 0; display: grid; border-top: 1px solid var(--line); }
+.word-examples strong { font-size: 1.22rem; }
+.kanji .stroke-cell { width: min(100%, 12rem); }
+@media (max-width: 48rem) {
+  .kanji-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .entry-layout { grid-template-columns: minmax(0,1fr); gap: .5rem; }
+}
+@media (max-width: 36rem) {
+  .kanji-list { grid-template-columns: minmax(0, 1fr); }
+  .catalog-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .catalog-filters label:first-child { grid-column: 1/-1; }
+  .kanji-list a { min-height: 4.4rem; }
+}

@@ -1,0 +1,23 @@
+/references/*.zip
+node_modules/
+dist/
+test-results/
+playwright-report/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+
+# Separate ChatGPT Sites publishing checkout and local hosting identity
+/sites/
+/.openai/
+
+# Local caches, logs, and editor/OS files
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

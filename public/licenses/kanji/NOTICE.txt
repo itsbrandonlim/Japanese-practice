@@ -1,0 +1,37 @@
+Japanese Study • Kanji data credits
+
+Character data and vocabulary
+
+Japanese Study uses KANJIDIC2 and the Japanese and English components of
+JMdict, copyright James William Breen and the Electronic Dictionary Research
+and Development Group (EDRDG). Derived dictionary data is redistributed under
+Creative Commons Attribution-ShareAlike 4.0 International.
+
+Publisher and licensing statement: https://www.edrdg.org/edrdg/licence.html
+Dictionary documentation: https://www.edrdg.org/dokuwiki/
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Local legal code: CC-BY-SA-4.0.txt (in this directory).
+Source distribution: https://github.com/scriptin/jmdict-simplified/releases/tag/3.6.2%2B20261109214828
+Source dictionary date: 2026-11-09. KANJIDIC2 database revision: 2026-313.
+
+Changes by Japanese Study: selected Japanese readings, English meanings,
+classical radical IDs, grade codes and stroke counts. Generated a search
+index and paged data files. Selected up to three examples per character
+from JMdict common entries with applicable readings and English senses.
+The Practice vocabulary deck selects 42 spellings from the same release,
+retains applicable readings and entry IDs, and displays one example gloss.
+The derived deck is also distributed under CC BY-SA 4.0.
+
+Stroke artwork
+
+Uses KanjiVG, copyright 2009/2010/2011 Ulrich Apel and project contributors.
+https://kanjivg.tagaini.net/
+Source: https://github.com/KanjiVG/kanjivg/releases/tag/r20260714
+Diagram data is redistributed under Creative Commons Attribution-ShareAlike
+3.0 Unported. https://creativecommons.org/licenses/by-sa/3.0/
+Local legal code: CC-BY-SA-3.0.txt (in this directory).
+
+Changes by Japanese Study: extracted centerline path geometry in source
+stroke order from main-version SVGs. Removed markup, styles, labels, and
+metadata. Retained paths only for exact character and primary count matches.
+See /data/kanji/20261109-v1/manifest.json for input SHA-256 and coverage.
