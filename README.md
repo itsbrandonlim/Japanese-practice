@@ -1,5 +1,7 @@
 # Kotoba Study
 
+The shared page footer displays © 2026 Brandon Nicolas Marlim.
+
 A browser-based Japanese learning project. Open Kana to switch between Hiragana and Katakana, study rōmaji and stroke order, or listen using an available Japanese voice. Open Kanji to search 13,108 dictionary entries by character, kana reading, or English meaning. The five main sections support system, light, and dark themes.
 
 ## Run locally

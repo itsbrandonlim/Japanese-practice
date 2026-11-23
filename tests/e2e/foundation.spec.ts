@@ -9,6 +9,7 @@ test('all sections support direct entry, active navigation, and the viewport', a
     await expect(page.getByRole('heading', { name: title, exact: true })).toBeVisible()
     await expect(page.getByRole('link', { name: title, exact: true })).toHaveAttribute('aria-current', 'page')
     await expect(page).toHaveTitle(title + ' | Kotoba Study')
+    await expect(page.getByRole('contentinfo')).toHaveText('© 2026 Brandon Nicolas Marlim')
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
   }
   await page.goto('/kanji/example')

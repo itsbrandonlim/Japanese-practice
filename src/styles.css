@@ -16,6 +16,9 @@
 :root[data-theme=dark] { color-scheme: dark; }
 
 body { margin: 0; background: var(--paper); color: var(--ink); }
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+.site-footer { border-top: 1px solid var(--line); padding-block: 1.25rem; color: var(--muted); font-size: .875rem; }
 .page-width { width: min(100% - 3rem, 66rem); margin-inline: auto; }
 .masthead { border-bottom: 1px solid var(--line); }
 .topbar { min-height: 5.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }

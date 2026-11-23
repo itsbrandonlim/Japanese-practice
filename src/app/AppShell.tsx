@@ -36,5 +36,6 @@ export function AppShell() {
       </nav>
     </header>
     <main className="page-width" ref={main} id="content" tabIndex={-1}><Outlet /></main>
+    <footer className="site-footer"><div className="page-width">© 2026 Brandon Nicolas Marlim</div></footer>
   </>
 }
